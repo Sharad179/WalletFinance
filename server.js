@@ -10,6 +10,6 @@ app.get('*', function(req,res){
     res.sendFile(path.resolve(__dirname,'public','index.html'));
 })
 
-app.listen(3010, function(){
-    console.log("app is listening on port 3010");
+app.listen(3012, function(){
+    console.log("app is listening on port 3012");
 })
