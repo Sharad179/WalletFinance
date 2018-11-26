@@ -55,7 +55,7 @@ componentDidMount(){
             plotBands: [{
                 from: 0,
                 to: 600,
-                color: '#55BF3B' // green
+                color: '#DF5353' // red
             }, {
                 from: 600,
                 to: 800,
@@ -63,7 +63,7 @@ componentDidMount(){
             }, {
                 from: 800,
                 to: 1000,
-                color: '#DF5353' // red
+                color: '#55BF3B' // green
             }]
         },
         series: [{
