@@ -35,15 +35,15 @@ class DashboardPage extends React.Component {
         return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
     componentDidMount() {
-        const customer = this.getParameterByName("firstName");
-        console.log("customer", customer);
+        const customer = this.getParameterByName("retraApplicationId");
+        
         var _this = this;
-        fetch('http://ec2-13-233-180-15.ap-south-1.compute.amazonaws.com/app/walletScoreByName?firstName=' + customer, {
+        fetch('http://ec2-13-233-180-15.ap-south-1.compute.amazonaws.com/app/walletScore?retraApplicationId=' + customer, {
             method: 'GET'
         }).then(function (response) {
             return response.json()
         }).then(function (body) {
-            console.log(body);
+            
             _this.setState({ "previousRecord": body["previousRecord"], "scoreone": parseInt(body["score"]), "riskbasedFitment": body["RiskBasedPricingGrid"],"firstName":body["firstName"],"age":body["age"],"residOffStabilty":body["currentResidenceStability"],"maritalStatus":body["maritalStatus"] });
 
         });
