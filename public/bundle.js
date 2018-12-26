@@ -37381,8 +37381,11 @@ var DashboardPage = function (_React$Component) {
             }).then(function (response) {
                 return response.json();
             }).then(function (body) {
-
-                _this.setState({ "previousRecord": body["previousRecord"], "scoreone": parseInt(body["score"]), "riskbasedFitment": body["RiskBasedPricingGrid"], "firstName": body["firstName"], "age": body["age"], "residOffStabilty": body["currentResidenceStability"], "maritalStatus": body["maritalStatus"] });
+                if (!body.error) {
+                    _this.setState({ "previousRecord": body["previousRecord"], "scoreone": parseInt(body["score"]), "riskbasedFitment": body["RiskBasedPricingGrid"], "firstName": body["firstName"], "age": body["age"], "residOffStabilty": body["currentResidenceStability"], "maritalStatus": body["maritalStatus"] });
+                } else {
+                    alert(body.error);
+                }
             });
         }
     }, {
