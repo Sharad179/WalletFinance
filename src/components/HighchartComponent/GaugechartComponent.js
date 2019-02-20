@@ -32,7 +32,7 @@ componentDidMount(){
         
         yAxis: {
             min: 0,
-            max: 1000,
+            max: 900,
     
             minorTickInterval: 'auto',
             minorTickWidth: 1,
@@ -54,15 +54,15 @@ componentDidMount(){
             },
             plotBands: [{
                 from: 0,
-                to: 600,
+                to: 650,
                 color: '#DF5353' // red
             }, {
-                from: 600,
-                to: 800,
+                from: 650,
+                to: 700,
                 color: '#DDDF0D' // yellow
             }, {
-                from: 800,
-                to: 1000,
+                from: 700,
+                to: 900,
                 color: '#55BF3B' // green
             }]
         },
