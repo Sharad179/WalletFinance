@@ -72,7 +72,7 @@ class DashboardPage extends React.Component {
                             <div className="col-sm-3">
 
 
-                                <VerticalTable tablehead={"PL - Salary Advance"} heading={[{ field: "Name", value: this.state.firstName }, { field: "Age", value: this.state.age }, { field: "Residential/Office Stability", value: this.state.residOffStabilty }, { field: "Marital Status", value: this.state.maritalStatus }]} panelHeight="650px" />
+                                <VerticalTable tablehead={"Wallet Finance"} heading={[{ field: "Name", value: this.state.firstName }, { field: "Age", value: this.state.age }, { field: "Residential/Office Stability", value: this.state.residOffStabilty }, { field: "Marital Status", value: this.state.maritalStatus }]} panelHeight="650px" />
 
                             </div>
                             <div className="col-sm-8 col-sm-offset-1 form_part">
